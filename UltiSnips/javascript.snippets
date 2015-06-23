@@ -145,4 +145,23 @@ snippet us
 'use strict'`!p snip.rv = semi(snip)`
 endsnippet
 
+# Qeemo nodejs code guide
+
+snippet header "file header info"
+/**
+ * Copyright (c) 2012-`!v strftime("%Y")` Qeemo Ltd. All Rights Reserved.
+ */
+/**
+ * User: ${1:`!v g:snips_author`}
+ * Date: `!v strftime("%Y-%m-%d")`
+ * Time: `!v strftime("%H:%M")`
+ * File: ${2:`!v expand("%:t")`}
+ * Version: ${3:'1.0'}
+ * Description: ${4:'desc'}
+ * Last Modified: `!v strftime("%B %d, %Y")` By `!v g:snips_author`
+ */
+
+$0
+endsnippet
+
 # vim:ft=snippets:
